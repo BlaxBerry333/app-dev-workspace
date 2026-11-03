@@ -5,7 +5,7 @@ app-dev-workspace/
 ├── .claude/
 │   ├── CLAUDE.md
 │   ├── launch.json             Claude 启动开发服务器用的配置，不进 git
-│   ├── rules/                  按需加载的规范：style.<内容>.md、dir.<目录>.md
+│   ├── rules/                  按需加载的规范：style.<内容>.md、dir.<目录>.md、dev.<领域>.md
 │   └── skills/                 commit、check
 ├── .vscode/                    各 app 通用的设置和推荐插件
 ├── apps/

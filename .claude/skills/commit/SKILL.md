@@ -1,6 +1,7 @@
 ---
 name: commit
 description: 要写 commit message 时用。规定 commit message 的写法（工作区本身用中文，apps 里的用英文），以及写好后交给用户自己提交
+model: sonnet
 ---
 
 # commit

@@ -7,6 +7,7 @@
 3. `apps/apps.list` 加一行，没有这个文件就照 `.example` 新建：app 名、可见性、地址。可见性写 public 或 private，省略就是 public
 4. 跑 `make ports` 看哪段空着，`apps/ports.list` 给它登记端口
 5. `make setup app=<app>`
+6. 是游戏、Vite 单页项目这类的，把 `apps/<app>/**` 加进 `.claude/rules/dev.*.md` 的 `paths`
 
 ## 换电脑
 

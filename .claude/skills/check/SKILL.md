@@ -1,6 +1,7 @@
 ---
 name: check
 description: 我说「检查」「检查一下」「再检查」「看下有没有问题」时用。规定检查的范围、拿什么当依据、怎么验证、怎么汇报
+model: sonnet
 ---
 
 # check
@@ -21,11 +22,11 @@ description: 我说「检查」「检查一下」「再检查」「看下有没�
 ## 怎么查
 
 - shell 脚本：先跑 `bash -n`。改了逻辑的，再在 scratchpad 里建副本，跑受影响的 make 命令，看输出和退出码。只改了注释的，`bash -n` 就够。测试要守的规矩见 CLAUDE.md 和 `style.shell.md`
-- 规则：改到的文件，按它适用的 `style.*`、`dir.*` 逐条对照
+- 规则：改到的文件，按它适用的 `style.*`、`dir.*`、`dev.*` 逐条对照
 - 引用：删掉或改名的文件、函数、变量、命令，用 `grep` 查一遍还有没有地方在用
 - 文档：命令、流程、目录有变化时，看 `dev/docs/`、README 和 `.example` 里的说明有没有跟着改
 - `.claude/`：rule 的 `paths:` 能不能匹配到它要管的文件；CLAUDE.md、rules、skills 之间有没有重复或矛盾
-- app：跑它 README 里写的检查命令
+- app：跑它 README 里写的检查命令，照原样跑，不加参数
 
 ## 什么算问题
 

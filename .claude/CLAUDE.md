@@ -36,7 +36,7 @@
 ## 目录
 
 - app 在这个工作区里开发，会话开在工作区根目录。工作区的规矩对 app 同样有效
-- app 仓库里不放任何 Claude 相关的文件。app 的约定写在 app 仓库自己的 README 和它链接的文档里，工作区不写具体某个 app 的规矩；跟工作区冲突时先问我
+- app 仓库里不放任何 Claude 相关的文件。工作区的规矩按类别写（web 项目、游戏这类），只适用于某一个 app 的约定写在 app 仓库自己的 README 和它链接的文档里；跟工作区冲突时先问我
 - 根目录里进 git 的文件只放 `Makefile`、`README.md` 和 git 相关的
-- 新开的 app 在 `apps/` 下建好，登记到 `apps/apps.list`，端口登记到 `apps/ports.list`。这两个文件不进 git
+- 新开的 app 在 `apps/` 下建好，登记到 `apps/apps.list`，端口登记到 `apps/ports.list`，这两个文件不进 git；属于游戏、Vite 单页项目这类的再加进那类 `dev.*.md` 的 `paths`
 - `dev/notes/` 是我自己的笔记，不进 git。只有 `TODO.md`（工作区的计划）和 `<app>/TODO.md`（各 app 的进度和计划）要读、要照着做，别的不是规矩，不按它们做事
