@@ -1,0 +1,10 @@
+# ============================================================
+# app 清单的格式。make setup 时 apps/ 下有 app 会建只有列名的 apps/apps.list，照这里填
+# 一行一个：app 名、可见性、git 地址，三列对齐
+# 可见性写 public 或 private，省略就是 public
+# 地址可以先空着，建好远程再填。加一行后跑 make setup app=<app 名>
+# ============================================================
+# <app 名>     <可见性>   <git 地址>
+# my-app       public     git@github.com:<用户名>/my-app.git
+# secret-app   private    git@github.com:<用户名>/secret-app.git
+# other-app    https://github.com/<用户名>/other-app.git

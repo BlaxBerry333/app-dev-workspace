@@ -1,0 +1,10 @@
+# ============================================================
+# 端口表的格式。make setup 时 apps/ 下有 app 会建只有列名的 apps/ports.list，照这里填
+# 一行一个端口：app 名、变量名、端口。一个 app 有几个端口就写几行
+# make setup、make start 时作为环境变量传给 app，盖过 app 自己 .env 里的同名变量
+# 一个 app 占一段，比如 10 个号；新 app 先跑 make ports 看哪段空着
+# ============================================================
+# <app 名>     <变量名>               <端口>
+# my-app       MY_APP__WEB_PORT       5100
+# my-app       MY_APP__API_PORT       5101
+# other-app    OTHER_APP__DEV_PORT    5200

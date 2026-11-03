@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "PKief.material-icon-theme",
+    "golang.go",
+    "GraphQL.vscode-graphql",
+    "redhat.vscode-yaml"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "dictionaryDefinitions": [
+    { "name": "workspace-words", "path": "./cspell-words.txt", "addWords": true }
+  ],
+  "dictionaries": ["workspace-words"],
+  "ignorePaths": ["node_modules", "dist", ".next", "package-lock.json"]
+}

@@ -1,0 +1,12 @@
+blax
+claude
+errexit
+errtrace
+goimports
+golangci
+gqlgen
+kief
+pipefail
+urql
+vite
+vitest
