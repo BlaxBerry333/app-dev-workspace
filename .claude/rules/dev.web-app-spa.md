@@ -1,7 +1,6 @@
 ---
 paths:
   - "apps/tenebrae/**"
-  - "dev/playground/**"
 ---
 
 # Vite 单页项目

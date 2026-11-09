@@ -3,7 +3,7 @@ paths:
   - "{Makefile,.gitignore,.gitattributes}"
   - "dev/scripts/**"
   - "apps/{apps.list,ports.list,*.example}"
-  - "{apps/*,dev/playground}/**/{Makefile,.gitignore,.gitattributes,.prettierignore,prettierignore,.husky/*}"
+  - "{apps/*,dev/playground}/**/{Makefile,.gitignore,.gitattributes,.prettierignore,prettierignore,.husky/*,pnpm-workspace.yaml}"
   - "{apps/*,dev/playground}/**/.env*"
   - "{apps/*,dev/playground}/**/*.{sh,ts,tsx,js,mjs,scss,css,go,astro}"
 ---

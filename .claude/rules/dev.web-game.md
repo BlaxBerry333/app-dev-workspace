@@ -1,7 +1,6 @@
 ---
 paths:
   - "apps/tenebrae/**"
-  - "dev/playground/**"
 ---
 
 # web 游戏
@@ -28,11 +27,11 @@ three.js 加 React 的游戏。通用的游戏规矩见 `dev.game.md`，项目�
 
 ## 数据和素材
 
-- 别名 `@data/`、`@assets/` 指向游戏仓库根目录的 `data/`、`assets/`，谁都可以用；不加别的别名。`vite.config` 的 `server.fs.allow` 放开到仓库根目录，开发服务器才读得到
+- 别名 `@data/`、`@assets/` 指向这个游戏用的 `data/`、`assets/`（按项目分了子目录的，指向这个项目的子目录），谁都可以用；不加别的别名。`vite.config` 的 `server.fs.allow` 放开到仓库根目录，开发服务器才读得到
 - import 里自己的那组按 `@/`、`@data/`、`@assets/`、`./`、样式的顺序排
 - 数据用 `@data/` 直接导入，不复制进 src
-- 数据的 TS 类型从 schema 生成：`npm run build:data-types` 写到 `src/utils/types/data.ts`，用项目的 prettier 排好，进 git。功能里从它取自己要的那块（`ItemsData['items'][string]`），只有要收窄的（物品 id 的联合类型）才自己写
-- `npm test` 还按 schema 检查 `data/`（`scripts/validate-data.ts`，用 ajv），并检查生成的类型有没有过时。提交前的检查只管 web 项目里的文件，不查 `data/`
+- 数据的 TS 类型从 schema 生成：`build:data-types` 写到 `src/utils/types/data.ts`，用项目的 prettier 排好，进 git。功能里从它取自己要的那块（`ItemsData['items'][string]`），只有要收窄的（物品 id 的联合类型）才自己写
+- `test` 还按 schema 检查 `data/`（`scripts/validate-data.ts`，用 ajv），并检查生成的类型有没有过时。提交前的检查只管 web 项目里的文件，不查 `data/`
 - 素材用 `import url from '@assets/….glb?url'` 取网址再交给 loader，打包后文件名带 hash
 - `dev/playground/` 的试验不跟别的平台共用，数据和素材放在试验自己的 `src/` 里，不用 `@data/`、`@assets/`
 
